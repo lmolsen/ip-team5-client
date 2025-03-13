@@ -1,7 +1,19 @@
+@use "../../styles/partials/_mixins" as *;
+
 .oas {
     width: 100vw;
     height: 100vh;  
-    background-image: url('/oas-desktop.png');
+    background-image: url('/oas-mobile.png');
     background-size: cover;
     background-repeat: no-repeat; 
+    @include tablet {
+        background-image: url('/oas-tablet.png');
+    }
+    @include desktop {
+        width: 100vw;
+        height: 100vh;  
+        background-image: url('/oas-desktop.png');
+        background-size: cover;
+        background-repeat: no-repeat; 
+    }
 }

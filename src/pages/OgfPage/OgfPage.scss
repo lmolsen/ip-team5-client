@@ -1,7 +1,12 @@
+@use "../../styles/partials/_mixins" as *;
+
 .ogf {
     width: 100vw;
     height: 100vh;  
-    background-image: url('/ogf-desktop.png');
+    background-image: url('/ogf-tablet.png');
     background-size: cover;
     background-repeat: no-repeat; 
+    @include desktop {
+        background-image: url('/ogf-desktop.png');
+    }
 }
