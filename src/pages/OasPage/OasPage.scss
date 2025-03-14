@@ -1,19 +1,18 @@
+@use "../../styles/partials/_global" as *;
 @use "../../styles/partials/_mixins" as *;
 
 .oas {
-    width: 100vw;
-    height: 100vh;  
+    width: 100%;
+    min-height: 10200px; 
     background-image: url('/oas-mobile.png');
     background-size: cover;
     background-repeat: no-repeat; 
     @include tablet {
         background-image: url('/oas-tablet.png');
+        min-height: 6750px; 
     }
     @include desktop {
-        width: 100vw;
-        height: 100vh;  
         background-image: url('/oas-desktop.png');
-        background-size: cover;
-        background-repeat: no-repeat; 
+        min-height: 6250px; 
     }
 }
