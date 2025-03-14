@@ -1,0 +1,40 @@
+@use "../../styles/partials/global" as *;
+
+.widget {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  right: 0;
+  top: 40vh;
+
+  &__fullview {
+    right: 0;
+    top: 10vh;
+  }
+}
+
+.content {
+  width: 16rem;
+  height: 10rem;
+  background-color: peachpuff;
+  opacity: 100%;
+
+  &--hide {
+    display: none;
+  }
+
+  &--opaque {
+    opacity: 30%;
+  }
+
+  &__fullview {
+    width: 30vw;
+    height: 80vh;
+  }
+}
+
+.sidebar {
+  height: 7.5rem;
+  width: 1.5rem;
+  background-color: grey;
+}

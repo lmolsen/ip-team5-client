@@ -1,0 +1,26 @@
+[
+  {
+    "persona_id": 1,
+    "page": "oas",
+    "personalized_summary": "1. First Payment: You’ll receive OAS either the month after you turn 65 or on a date you choose. OAS Outside Canada: You can receive OAS if you lived in Canada for 20+ years after 18 or in a country with a social security agreement with Canada. Payments stop after 6 months abroad. 2. Taxation: OAS is taxable income. Taxes aren’t automatically deducted, but you can request deductions or pay quarterly taxes. Changes in Situation: Notify Service Canada of changes in address, marital status, or if a beneficiary passes away. Cancel or Delay Payments: If you’ve received OAS for less than 6 months, you can cancel or delay payments. 3. Travel or Moving Abroad: Payments stop after 6 months abroad if you're not eligible. Notify Service Canada to avoid overpayment. 4. Special Cases: Payments stop if you’re in prison for 2+ years and can restart after release. Notify Service Canada if someone passes away.",
+    "next_steps": "For next steps, consider setting up a My Service Canada Account, planning for taxes, and ensuring you meet residency requirements for receiving OAS abroad."
+  },
+  {
+    "persona_id": 2,
+    "page": "oas",
+    "personalized_summary": "1. OAS Eligibility: You need to have lived in Canada for at least 40 years after turning 18 to receive the full OAS pension. If you move abroad, you must have lived in Canada for at least 20 years after 18 to qualify for OAS payments outside the country. 2. First Payment: OAS payments start at age 65, but you can choose to delay payments for higher monthly benefits. 3. Taxation: OAS payments are taxable. You don’t need to worry about this now, but be prepared to plan for taxes when you start receiving it. 4. OAS & Residence Abroad: If you plan to travel or live outside Canada in the future, payments will stop if you’re out of the country for more than 6 months and don’t meet residency requirements. 5. Planning Ahead: Start saving and investing for retirement early, as OAS alone may not be sufficient to maintain your lifestyle. Consider other pension plans like CPP or RRSPs.",
+    "next_steps": "Keep an eye on your eligibility as you build your career and financial future. Consider setting up a My Service Canada Account to monitor your OAS and other government benefits as you approach retirement age."
+  },
+  {
+    "persona_id": 2,
+    "page": "good_food",
+    "personalized_summary": "1. Fresh & Nutritious Produce: Weekly boxes of seasonal fruits and vegetables, packed with nutrients to fuel your workouts. 2. Support for Local Farmers: Access high-quality, locally sourced produce to support your health and the community. 3. Delivery/Pick-Up: Delivery is $8, or you can pick up for free at a nearby location. 4. Nutrient-Rich: Each box is filled with fresh produce that provides essential vitamins, minerals, and fiber to support your fitness goals.",
+    "next_steps": "This service offers a cost-effective and convenient solution to getting fresh, healthy food without the hassle of shopping trips. Book online to reserve your pickup or delivery."
+  },
+  {
+    "persona_id": 1,
+    "page": "good_food",
+    "personalized_summary": "1. Convenient Delivery or Pick-Up: Home delivery is available for $8. If you're a senior, immunocompromised, or facing mobility challenges, you may qualify for free delivery. 2. Affordable Fresh Produce: Access weekly boxes of fresh fruits and vegetables, providing nutritious options at a good value—ideal if you're looking to save money while maintaining a healthy diet. 3. Locally Sourced: Support local farmers and enjoy fresh, high-quality produce delivered right to your door. 4. Nutrient-Rich: Each box is packed with fresh produce that helps meet your nutritional needs, supporting your health and well-being.",
+    "next_steps": "It’s worth reaching out to OGFB to see if you’re eligible for free delivery."
+  }
+]
