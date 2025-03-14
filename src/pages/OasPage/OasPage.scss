@@ -4,15 +4,15 @@
 .oas {
   width: 100%;
   min-height: 10200px;
-  background-image: url("/public/oas-mobile.png");
+  background-image: url("/oas-mobile.png");
   background-size: cover;
   background-repeat: no-repeat;
   @include tablet {
-    background-image: url("/public/oas-tablet.png");
+    background-image: url("/oas-tablet.png");
     min-height: 6750px;
   }
   @include desktop {
-    background-image: url("/public/oas-desktop.png");
+    background-image: url("/oas-desktop.png");
     min-height: 6250px;
   }
 }
