@@ -16,7 +16,7 @@
 .cta {
   position: absolute;
   top: -35px;
-  left: 50%; 
+  left: 65%; 
   transform: translateX(-50%);
   z-index: 10;
 }
@@ -26,7 +26,7 @@
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 16px;
   width: 16rem;
-  height: 10rem;
+  height: 16rem;
   background-color: #F9F4F4;
   border-radius: 12px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -48,8 +48,26 @@
   }
 }
 
-.sidebar {
-  height: 7.5rem;
-  width: 1.5rem;
-  background-color: grey;
+strong {
+  padding: 10px 0px;
+}
+
+
+li {
+  list-style: none; 
+  padding: 4px;
+}
+
+.summary-item {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.next-steps {
+  margin-top: 10px;
+  line-height: 1.6; 
+}
+
+.next-steps p {
+  margin-bottom: 10px;
 }

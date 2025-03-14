@@ -11,6 +11,8 @@ function Widget({ pageName, persona }) {
   function handleWidgetClose(event) {
     setCloseWidget(!closeWidget);
     setExpand(false);
+    setTimeout(() => setCloseWidget(false), 300);
+
   }
 
   function handleExpand(event) {
@@ -38,12 +40,20 @@ function Widget({ pageName, persona }) {
     return classname;
   }
 
+  function formatSummary(summary) {
+    const points = summary.split(/\s(?=\d+\.)/); 
+  
+    return points.map((point, index) => (
+      <li key={index} className="summary-item">{point}</li> //
+    ));
+  }
+
   return (
     <div className={expand ? "widget widget__fullview" : "widget"}>
       <svg 
         className="cta" 
         width="200" 
-        height="30" 
+        height="35" 
         viewBox="0 0 200 30" 
         fill="none" 
         xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +61,7 @@ function Widget({ pageName, persona }) {
         style={{ cursor: "pointer" }}
       >
         <g filter="url(#filter0_d_26_4)">
-          <rect x="4" width="326" height="35" rx="17.5" fill="#C864A6"/>
+          <rect x="4" width="326" height="55" rx="17.5" fill="#C864A6"/>
         </g>
         <rect x="8.5" y="4.5" width="60" height="26" rx="13" stroke="white"/>
         <path
@@ -72,12 +82,14 @@ function Widget({ pageName, persona }) {
                   <p>
                     <strong>Summary:
                       </strong> 
-                      {item.personalized_summary}
+                      {formatSummary(item.personalized_summary)}
                   </p>
                   <p>
                     <strong>Next Steps:
                       </strong> 
-                      {item.next_steps}
+                      <div className="next-steps">
+                        {item.next_steps}
+                      </div>
                   </p>
                 </div>
               ) : (
