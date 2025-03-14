@@ -1,0 +1,33 @@
+[
+  {
+    "persona_id": 1,
+    "page": "oas",
+    "summarized_summary": "What you need to apply for OAS",
+    "personalized_summary": 
+    "1. You’ll receive OAS either the month after you turn 65 or on a date you choose 2. OAS is taxable income. If you’ve received OAS for less than 6 months, you can cancel or delay payments. 3. Payments stop after 6 months abroad if you're not eligible.",
+    "next_steps": "Set up a My Service Canada Account"
+  },
+  {
+    "persona_id": 2,
+    "page": "oas",
+    "summarized_summary": "What you need to be eligable for OAS",
+    "personalized_summary": 
+    "1. OAS Eligibility: You need to have lived in Canada for at least 40 years after turning 18 to receive the full OAS pension. If you move abroad, you must have lived in Canada for at least 20 years after 18 to qualify for OAS payments outside the country. 2. First Payment: OAS payments start at age 65, but you can choose to delay payments for higher monthly benefits. 3. Taxation: OAS payments are taxable. You don’t need to worry about this now, but be prepared to plan for taxes when you start receiving it. 4. OAS & Residence Abroad: If you plan to travel or live outside Canada in the future, payments will stop if you’re out of the country for more than 6 months and don’t meet residency requirements. 5. Planning Ahead: Start saving and investing for retirement early, as OAS alone may not be sufficient to maintain your lifestyle. Consider other pension plans like CPP or RRSPs.",
+    "next_steps": "Keep an eye on your eligibility as you build your career and financial future. Consider setting up a My Service Canada Account to monitor your OAS and other government benefits as you approach retirement age."
+  },
+  {
+    "persona_id": 2,
+    "page": "good_food",
+    "summarized_summary": "What you need to know about Good Food Box",
+    "personalized_summary": 
+    "1. Fresh & Nutritious Produce: Weekly boxes of seasonal fruits and vegetables, packed with nutrients to fuel your workouts. 2. Support for Local Farmers: Access high-quality, locally sourced produce to support your health and the community. 3. Delivery/Pick-Up: Delivery is $8, or you can pick up for free at a nearby location.",
+    "next_steps": "This service offers a cost-effective and convenient solution to getting fresh, healthy food without the hassle of shopping trips. Book online to reserve your pickup or delivery."
+  },
+  {
+    "persona_id": 1,
+    "page": "good_food",
+    "summarized_summary": "Get free delivery",
+    "personalized_summary": "1. If you're a senior you may qualify for free delivery. 2. Access weekly boxes of fresh food at a good value. 3. Supports local farmers.",
+    "next_steps": "Contact OGFB for free delivery eligibility."
+  }
+]
