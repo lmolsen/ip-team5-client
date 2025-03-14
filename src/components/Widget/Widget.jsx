@@ -94,20 +94,28 @@ function Widget({ pageName, persona }) {
             {responses.map((item, index) => {
               return item.page === pageName &&
                 item.persona_id === parseInt(persona) ? (
-                <div key={index} className="summary">
-                  <p>
-                    <strong>Summary:
-                      </strong> 
-                      {formatSummary(item.personalized_summary)}
-                  </p>
-                  <p>
-                    <strong>Next Steps:
-                      </strong> 
-                      <div className="next-steps">
-                        {item.next_steps}
-                      </div>
-                  </p>
-                </div>
+                  <div key={index}>
+                  {expand ? ( 
+                    <div className="summary">
+                      <p>
+                        <strong>What you need to know:
+                          </strong> 
+                          {formatSummary(item.personalized_summary)}
+                      </p>
+                      <p>
+                        <strong>Next Steps:
+                          </strong> 
+                          <div className="next-steps">
+                            {item.next_steps}
+                          </div>
+                      </p>
+                    </div>
+                  ) : (
+                    <div className="summarized-summary">
+                      {item.summarized_summary}
+                    </div>
+                  )}
+                  </div>
               ) : (
                 ""
               );
