@@ -8,11 +8,12 @@ function Widget({ pageName, persona }) {
   const [transparency, setTransparency] = useState(true);
   const [closeWidget, setCloseWidget] = useState(false);
 
+  
   function handleWidgetClose(event) {
     setCloseWidget(!closeWidget);
     setExpand(false);
+    setTransparency(true);
     setTimeout(() => setCloseWidget(false), 300);
-
   }
 
   function handleExpand(event) {
@@ -32,12 +33,27 @@ function Widget({ pageName, persona }) {
       classname += " content__fullview";
     }
     if (closeWidget) {
-      classname += " content--hide";
+      classname += " content--hide";  
     }
-    if (transparency) {
-      classname += " content--opaque";
+    if (!closeWidget && !expand) {
+      classname += " content--transparent";
     }
     return classname;
+  }
+
+  function getCtaClassName() {
+    let ctaClass = "cta";
+    if (expand) {
+      ctaClass += " cta__fullview";
+    } else {
+      ctaClass += " cta--transparent";
+    }
+
+    if (closeWidget) {
+      ctaClass += " cta--hidden";
+    }
+
+    return ctaClass;
   }
 
   function formatSummary(summary) {
@@ -51,7 +67,7 @@ function Widget({ pageName, persona }) {
   return (
     <div className={expand ? "widget widget__fullview" : "widget"}>
       <svg 
-        className="cta" 
+        className={getCtaClassName()}
         width="200" 
         height="35" 
         viewBox="0 0 200 30" 
