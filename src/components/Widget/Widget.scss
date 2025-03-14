@@ -18,9 +18,11 @@
   height: 10rem;
   background-color: peachpuff;
   opacity: 100%;
+  overflow-y: auto;
 
   &--hide {
     display: none;
+    overflow-y: unset;
   }
 
   &--opaque {

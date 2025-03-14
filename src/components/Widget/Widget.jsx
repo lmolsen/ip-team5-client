@@ -1,7 +1,8 @@
 import "./widget.scss";
-import { use, useState } from "react";
+import responses from "../../data/responses.json";
+import { useState } from "react";
 
-function Widget() {
+function Widget({ pageName, persona }) {
   const [initial, setInitial] = useState(true);
   const [expand, setExpand] = useState(false);
   const [transparency, setTransparency] = useState(true);
@@ -28,11 +29,11 @@ function Widget() {
     if (expand) {
       classname += " content__fullview";
     }
-    if (transparency) {
-      classname += " content--opaque";
-    }
     if (closeWidget) {
       classname += " content--hide";
+    }
+    if (transparency) {
+      classname += " content--opaque";
     }
     return classname;
   }
@@ -54,6 +55,23 @@ function Widget() {
               />
             </g>
           </svg>
+          <div>
+            {responses.map((item, index) => {
+              return item.page === pageName &&
+                item.persona_id === parseInt(persona) ? (
+                <div key={index} className="summary">
+                  <p>
+                    <strong>Summary:</strong> {item.personalized_summary}
+                  </p>
+                  <p>
+                    <strong>Next Steps:</strong> {item.next_steps}
+                  </p>
+                </div>
+              ) : (
+                ""
+              );
+            })}
+          </div>
         </div>
       </section>
       <div className="sidebar" onClick={handleWidgetClose}></div>

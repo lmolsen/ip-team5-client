@@ -9,8 +9,8 @@ function App() {
     <BrowserRouter>
       <Widget />
       <Routes>
-        <Route path="/" element={<OasPage />}></Route>
-        <Route path="/ogf" element={<OgfPage />}></Route>
+        <Route path="/oas/:persona" element={<OasPage />}></Route>
+        <Route path="/ogf/:persona" element={<OgfPage />}></Route>
       </Routes>
     </BrowserRouter>
   );
